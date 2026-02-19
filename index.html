@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- เพิ่ม viewport เพื่อรองรับมือถือ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ทบทวนการเรียนการสอนคณิตศาสตร์</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page2.css">
+</head>
+<body>
+
+<!-- ===== พื้นหลัง ===== -->
+<div class="background">
+    <span class="shape circle"></span>
+    <span class="shape square"></span>
+    <span class="shape circle small"></span>
+    <span class="shape square small"></span>
+
+    <!-- ตัวการ์ตูน -->
+    <span class="decor-character char-1">🧑‍🎓</span>
+    <span class="decor-character char-2">🎈</span>
+    <span class="decor-character char-3">🧑‍🏫</span>
+    <span class="decor-character char-4">❤️</span>
+    <span class="decor-character char-6">⭐</span>
+
+    <!-- แสง -->
+    <span class="glow glow-1"></span>
+    <span class="glow glow-2"></span>
+</div>
+
+<!-- ===== เนื้อหา ===== -->
+<div class="container">
+
+    <!-- Mascot -->
+    <div class="mascot">
+        <div class="mascot-icon">🧑‍🎓📐</div>
+    </div>
+
+    <!-- Title -->
+    <h1>✨ ทบทวนการเรียนการสอนคณิตศาสตร์ ✨</h1>
+    <p class="subtitle">คลิปวิดีโอน่ารู้</p>
+
+    <!-- ===== เมนู ===== -->
+    <div class="menu">
+
+        <button class="card" onclick="goToPage('video1.html')">
+            <span class="icon">📐</span>
+            <div class="text">
+                <h3>ห.ร.ม. และ ค.ร.น</h3>
+            </div>
+        </button>
+
+        <button class="card" onclick="goToPage('video2.html')">
+            <span class="icon">➕</span>
+            <div class="text">
+                <h3>ทศนิยม</h3>
+            </div>
+        </button>
+
+        <button class="card" onclick="goToPage('video3.html')">
+            <span class="icon">🔺</span>
+            <div class="text">
+                <h3>การบวก ลบ คูณ หารระคนของเศษส่วนและจำนวนคละ</h3>
+            </div>
+        </button>
+
+        <button class="card" onclick="goToPage('video4.html')">
+            <span class="icon">🔷</span>
+            <div class="text">
+                <h3>เศษส่วนและการบวกการลบเศษส่วนและจำนวนคละ</h3>
+            </div>
+        </button>
+
+        <button class="card" onclick="goToPage('video5.html')">
+            <span class="icon">🔵</span>
+            <div class="text">
+                <h3>อัตราส่วนและร้อยละ</h3>
+            </div>
+        </button>
+
+    </div>
+
+    <!-- ===== ปุ่มกลับ ===== -->
+    <button class="back-btn" onclick="window.location.href='intro.html'">
+        ⬅ กลับหน้าแรก 🔺
+    </button>
+
+    <!-- ===== ปุ่มเลื่อน ===== -->
+    <div class="scroll-btns">
+        <button id="scrollUp">⬆</button>
+        <button id="scrollDown">⬇</button>
+    </div>
+
+</div>
+
+<!-- ===== JavaScript ===== -->
+<script>
+function goToPage(page) {
+    window.location.href = page;
+}
+
+document.getElementById("scrollUp").onclick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+document.getElementById("scrollDown").onclick = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+};
+</script>
+
+</body>
+</html>
